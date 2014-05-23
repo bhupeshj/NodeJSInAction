@@ -1,8 +1,6 @@
 chapter3.2/watch/Dora Candy Cane Sled Template.pdf
-/random_story/node_modules
 /.idea
 npm-debug.log
-/chapter2/node_modules
-/downloader/node_modules
 downloader/node_distros.tar
 nodeinAction.sublime-project
+nodeinAction.sublime-workspace
