@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'child_process',
+1 verbose cli   '--save' ]
+2 info using npm@1.3.21
+3 info using node@v0.10.24
+4 warn package.json downloader@0.0.0 No description
+5 warn package.json downloader@0.0.0 No repository field.
+6 warn package.json downloader@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'child_process', null ]
+9 verbose cache add name=undefined spec="child_process" args=["child_process",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'child_process',
+10 verbose parsed url   path: 'child_process',
+10 verbose parsed url   href: 'child_process' }
+11 silly lockFile 4845fa97-child-process child_process
+12 verbose lock child_process /home/bhupesh/.npm/4845fa97-child-process.lock
+13 silly lockFile 4845fa97-child-process child_process
+14 silly lockFile 4845fa97-child-process child_process
+15 verbose addNamed [ 'child_process', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 512a7ef6-child-process child_process@
+18 verbose lock child_process@ /home/bhupesh/.npm/512a7ef6-child-process.lock
+19 silly addNameRange { name: 'child_process', range: '*', hasData: false }
+20 verbose url raw child_process
+21 verbose url resolving [ 'https://registry.npmjs.org/', './child_process' ]
+22 verbose url resolved https://registry.npmjs.org/child_process
+23 info trying registry request attempt 1 at 00:09:36
+24 http GET https://registry.npmjs.org/child_process
+25 http 404 https://registry.npmjs.org/child_process
+26 silly registry.get cb [ 404,
+26 silly registry.get   { date: 'Sun, 18 May 2014 07:09:34 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     'cache-control': 'max-age=0',
+26 silly registry.get     'content-length': '52',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-v41-ASH, cache-lax1424-LAX',
+26 silly registry.get     'x-cache': 'MISS, MISS',
+26 silly registry.get     'x-cache-hits': '0, 0',
+26 silly registry.get     'x-timer': 'S1400396973.913867235,VS0,VS36,VE138,VE167',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly lockFile 512a7ef6-child-process child_process@
+28 silly lockFile 512a7ef6-child-process child_process@
+29 error 404 'child_process' is not in the npm registry.
+29 error 404 You should bug the author to publish it
+29 error 404
+29 error 404 Note that you can also install from a
+29 error 404 tarball, folder, or http url, or git url.
+30 error System Linux 3.11.0-20-generic
+31 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "child_process" "--save"
+32 error cwd /home/bhupesh/code/nodejs/nodeinAction/downloader
+33 error node -v v0.10.24
+34 error npm -v 1.3.21
+35 error code E404
+36 verbose exit [ 1, true ]

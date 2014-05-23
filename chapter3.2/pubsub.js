@@ -19,6 +19,21 @@ channel.on('join', function (id, client) {
     this.on('broadcast', this.subscriptions[id]);
 });
 
+
+channel.on('leave', function(id){
+    channel.removeListener('broadcast', this.subscriptions[id]);
+    channel.emit('broadcast',id, id + " has left the chat.\n");
+});
+
+channel.on('shutdown', function(){
+   channel.emit('broadcast','',"Chat has shutdown.\n");
+    channel.removeAllListeners('broadcast');
+});
+
+channel.on('error', function(err){
+    console.log('ERROR:' + err.message);
+});
+channel.emit('error', new Error('Something is wrong.'));
 var server= net.createServer(function(client){
    var id=client.remoteAddress + ':' + client.remotePort;
 
@@ -37,10 +52,17 @@ var server= net.createServer(function(client){
     client.on('data', function(data){
         console.log('on data ');
         data=data.toString();
+        if(data=="shutdown\r\n"){
+            channel.emit('shutdown');
+        }
         channel.emit('broadcast', id, data);
         console.log('data broadcasted');
     });
 
+
+    client.on('close', function(){
+       channel.emit('leave', id);
+    });
 });
 
 server.listen(8888);
