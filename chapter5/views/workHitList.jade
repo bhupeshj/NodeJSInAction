@@ -1,0 +1,21 @@
+mixin renderlink(id,path,label)
+    form(action=path, method="POST")
+        input(type="hidden", name="id", value=id)
+        input(type="submit", value=label)
+
+a(href="/archived") Archives
+a(href="/") Current
+table
+    each row in x
+        tr
+            td= row.date
+            td= row.hours
+            td= row.description
+            unless row.archived
+                td
+                    +renderlink(row.id,'/archive','Archive')
+            else
+                td
+            td
+                +renderlink(row.id,'/delete','Delete')
+include workform
