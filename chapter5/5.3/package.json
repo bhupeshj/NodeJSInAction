@@ -1,0 +1,14 @@
+{
+  "name": "5.3",
+  "version": "0.0.0",
+  "description": "",
+  "main": "redistrial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bhupesh jaywant",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "~0.10.3"
+  }
+}

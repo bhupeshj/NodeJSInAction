@@ -1,0 +1,15 @@
+{
+  "name": "chapter5",
+  "version": "0.0.0",
+  "description": "",
+  "main": "timetrack_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bhupesh jaywant",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "~2.3.2",
+    "jade": "~1.3.1"
+  }
+}
